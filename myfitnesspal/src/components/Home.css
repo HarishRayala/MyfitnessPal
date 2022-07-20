@@ -1,0 +1,67 @@
+.home_head_div {
+    border-top: 1px solid white;
+    width: 400px;
+    margin-left: 18%;
+}
+
+.home_main_head {
+    font-size: 50px;
+    font-weight: 900;
+    color: #222628;
+    line-height: 50px;
+    margin: 40px 0;
+}
+
+.startforfree {
+    color-scheme: messenger;
+}
+
+a:active {
+    color: "#0066ee";
+}
+
+.home_top_div {
+    background-image: url("../assets/HomeImages/hero-collage-top-large@2x.png");
+    height: 800px;
+    background-size: 100%;
+}
+
+.home_body_1 {
+    background-image: url("../assets/HomeImages/hero-collage-search-bottom-large@2x.png");
+    height: 300px;
+    background-size: 100%;
+}
+
+.line {
+    width: 80%;
+    margin: auto;
+    margin-bottom: -30px;
+    border-top: 5px solid white;
+}
+.home_input_search_box {
+    margin: auto;
+    text-align: center;
+    outline: none;
+    width: 900px;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .home_body_2{
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+  }
+  .home_body_2_sec1{
+    width: 600px;
+    text-align: center;
+    margin: auto;
+  }
+  .home_body_2_sec2{
+    display: flex;
+  }
+  .home_body_2_sec3{
+    width: 300px;
+    margin: auto;
+  }
+
+  

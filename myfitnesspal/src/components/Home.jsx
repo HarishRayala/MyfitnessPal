@@ -33,7 +33,8 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar/>
+      <Navbar />
+
       <Box className="home_top_div">
         <Box className="home_head_div">
           <Box className="home_main_head">
@@ -183,7 +184,8 @@ const Home = () => {
           Victory Stories
         </Box>
         <br />
-        <Text fontSize="lg">
+
+        <Text fontSize="md">
           When you reach your goals, our whole community celebrates with you.
           That’s over 200 million members sharing in your victory—using it to
           inspire their own journey.
@@ -191,11 +193,15 @@ const Home = () => {
       </Box>
       <Box>
         <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-Chevron-arrows-tanah-basah-glyph-tanah-basah-9.png" />
+
+        <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-Chevron-arrows-tanah-basah-glyph-tanah-basah-9.png" />
+
         {imagesSlider.map((e, id) =>
           setTimeout(() => {
             <img src={e.image} />;
           }, 3000)
         )}
+
         <img src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/48/000000/external-chevron-arrows-tanah-basah-basic-outline-tanah-basah-8.png" />
       </Box>
 
@@ -262,6 +268,8 @@ const Home = () => {
           </Box>
         </Flex>
       </Box>
+
+      <Box></Box>
     </div>
   );
 };
