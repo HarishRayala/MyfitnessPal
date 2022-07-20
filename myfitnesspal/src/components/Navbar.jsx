@@ -5,22 +5,6 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <Box color="#0066ee">
-        <Flex justifyContent="space-around" padding="10px 0px 20px 0px">
-          <Box>
-            <Link to="/">
-              <Heading fontSize="30px">myfitnesspal</Heading>
-            </Link>
-          </Box>
-
-          <Stack mt="10px">
-            <Box gap="10px">
-              <Link to="/login">log In</Link> {"|"}{" "}
-              <Link to="/signup">Sign Up</Link>
-            </Box>
-          </Stack>
-        </Flex>
-      </Box>
       <Box>
         <Flex
           fontWeight="600"
@@ -48,7 +32,7 @@ const Navbar = () => {
             <Link to="/">COMMUNITY</Link>
           </Box>
           <Box>
-            <Link to="blog">BLOG</Link>
+            <Link to="/blog">BLOG</Link>
           </Box>
           <Box>
             <Link to="/premium">PREMIUM</Link>
