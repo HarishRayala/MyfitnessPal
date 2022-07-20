@@ -4,6 +4,7 @@ import "./Home.css";
 import {
   Box,
   Button,
+  Flex,
   Heading,
   Image,
   Input,
@@ -12,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { useEffect } from "react";
+import Navbar from "./Navbar";
 
 const Home = () => {
   const [text, setText] = useState("");
@@ -31,6 +33,8 @@ const Home = () => {
 
   return (
     <div>
+      <Navbar />
+
       <Box className="home_top_div">
         <Box className="home_head_div">
           <Box className="home_main_head">
@@ -180,6 +184,7 @@ const Home = () => {
           Victory Stories
         </Box>
         <br />
+
         <Text fontSize="md">
           When you reach your goals, our whole community celebrates with you.
           That’s over 200 million members sharing in your victory—using it to
@@ -187,18 +192,84 @@ const Home = () => {
         </Text>
       </Box>
       <Box>
-      <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-Chevron-arrows-tanah-basah-glyph-tanah-basah-9.png"/>
+        <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-Chevron-arrows-tanah-basah-glyph-tanah-basah-9.png" />
+
+        <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-Chevron-arrows-tanah-basah-glyph-tanah-basah-9.png" />
+
         {imagesSlider.map((e, id) =>
           setTimeout(() => {
             <img src={e.image} />;
           }, 3000)
         )}
-        <img src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/48/000000/external-chevron-arrows-tanah-basah-basic-outline-tanah-basah-8.png"/>
+
+        <img src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/48/000000/external-chevron-arrows-tanah-basah-basic-outline-tanah-basah-8.png" />
       </Box>
 
-      <Box>
-
+      <Box textAlign="center" width="800px" margin="auto">
+        <Box
+          fontSize="50px"
+          fontWeight=" 860"
+          color="#222628"
+          lineHeight="50px"
+          textAlign="center"
+          margin="auto"
+        >
+          Recipes & Inspiration
+        </Box>
+        <br />
+        <Text fontSize="xl">
+          Get nutritionist-approved recipes and motivational workout tips from
+          MyFitnessPal experts.
+        </Text>
       </Box>
+      <br />
+      <Box margin="auto">
+        <Flex gap="20px">
+          <Box width="400px">
+            <Link to="https://blog.myfitnesspal.com/10-make-ahead-breakfasts-under-300-calories/">
+              <Box>
+                <Image
+                  src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbreakfast-300-calories.d991cc82.png&w=640&q=75"
+                  alt=""
+                />
+                <Heading size="md">
+                  15 Make-Ahead Breakfasts Under 300 Calories
+                </Heading>
+                <br />
+                <Text color="#0066ee">MyFitnessPal Blog</Text>
+              </Box>
+            </Link>
+          </Box>
+          <Box width="400px">
+            <Link to="https://blog.myfitnesspal.com/10-make-ahead-breakfasts-under-300-calories/">
+              <Box>
+                <Image
+                  src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcheat-days.a49e92b5.jpg&w=1920&q=75"
+                  alt=""
+                />
+                <Heading size="md">The Problem with Cheat Days</Heading>
+                <br />
+                <Text color="#0066ee">MyFitnessPal Blog</Text>
+              </Box>
+            </Link>
+          </Box>
+          <Box width="400px">
+            <Link to="https://blog.myfitnesspal.com/10-make-ahead-breakfasts-under-300-calories/">
+              <Box>
+                <Image
+                  src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgetting-moving.e3e4042a.png&w=1920&q=75"
+                  alt=""
+                />
+                <Heading size="md">Essential Guide to Getting Moving</Heading>
+                <br />
+                <Text color="#0066ee">MyFitnessPal Blog</Text>
+              </Box>
+            </Link>
+          </Box>
+        </Flex>
+      </Box>
+
+      <Box></Box>
     </div>
   );
 };
