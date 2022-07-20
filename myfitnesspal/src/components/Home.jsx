@@ -194,8 +194,6 @@ const Home = () => {
       <Box>
         <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-Chevron-arrows-tanah-basah-glyph-tanah-basah-9.png" />
 
-        <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-Chevron-arrows-tanah-basah-glyph-tanah-basah-9.png" />
-
         {imagesSlider.map((e, id) =>
           setTimeout(() => {
             <img src={e.image} />;
