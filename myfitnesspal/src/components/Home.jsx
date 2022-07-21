@@ -14,22 +14,13 @@ import {
 import { useState } from "react";
 import { useEffect } from "react";
 import Navbar from "./Navbar";
+import HomeSlideshow from "./HomeSlideshow";
+
 
 const Home = () => {
   const [text, setText] = useState("");
   const [pic, setPic] = useState(0);
 
-  const imagesSlider = [
-    {
-      image: "../assets/HomeImages/corousel_1.jpg",
-    },
-    {
-      image: "../assets/HomeImages/corousel_2.jpg",
-    },
-    {
-      image: "../assets/HomeImages/corousel_3.jpg",
-    },
-  ];
 
   return (
     <div>
@@ -192,15 +183,11 @@ const Home = () => {
         </Text>
       </Box>
       <Box>
-        <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-Chevron-arrows-tanah-basah-glyph-tanah-basah-9.png" />
+        
+            <HomeSlideshow/>
+       
 
-        {imagesSlider.map((e, id) =>
-          setTimeout(() => {
-            <img src={e.image} />;
-          }, 3000)
-        )}
-
-        <img src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/48/000000/external-chevron-arrows-tanah-basah-basic-outline-tanah-basah-8.png" />
+        
       </Box>
 
       <Box textAlign="center" width="800px" margin="auto">
@@ -221,10 +208,10 @@ const Home = () => {
         </Text>
       </Box>
       <br />
-      <Box margin="auto">
-        <Flex gap="20px">
+      <Box>
+        <Flex gap="20px" justifyContent="center">
           <Box width="400px">
-            <Link to="https://blog.myfitnesspal.com/10-make-ahead-breakfasts-under-300-calories/">
+            <Link to="/blog">
               <Box>
                 <Image
                   src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbreakfast-300-calories.d991cc82.png&w=640&q=75"
@@ -239,7 +226,7 @@ const Home = () => {
             </Link>
           </Box>
           <Box width="400px">
-            <Link to="https://blog.myfitnesspal.com/10-make-ahead-breakfasts-under-300-calories/">
+            <Link to="/blog">
               <Box>
                 <Image
                   src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcheat-days.a49e92b5.jpg&w=1920&q=75"
@@ -252,7 +239,7 @@ const Home = () => {
             </Link>
           </Box>
           <Box width="400px">
-            <Link to="https://blog.myfitnesspal.com/10-make-ahead-breakfasts-under-300-calories/">
+            <Link to="/blog">
               <Box>
                 <Image
                   src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgetting-moving.e3e4042a.png&w=1920&q=75"
@@ -266,8 +253,42 @@ const Home = () => {
           </Box>
         </Flex>
       </Box>
-
-      <Box></Box>
+      <br />
+      <br />
+      <Box textAlign="center" >
+        <Box
+          fontSize="50px"
+          fontWeight=" 860"
+          color="#222628"
+          lineHeight="50px"
+          margin="auto"
+          width="500px"
+        >
+          Connect with over 50 apps.
+        </Box>
+        <br />
+        <Text width="500px" margin="auto">
+          Easily link your MyFitnessPal account with apps that support your
+          healthier lifestyle. It’s not just about calories. It’s about feeling
+          better, looking better, and living better.
+        </Text>
+      </Box>
+      <br />
+      <Box>
+        <Image src="footer pic.png" alt="" margin="auto" />
+      </Box>
+      <br />
+      <br />
+      <Box>
+        <Flex justifyContent="center" gap="20px">
+          <Link to="https://apps.apple.com/us/app/myfitnesspal/id341232718" >
+          <Image src="ios.png"/>
+          </Link>
+          <Link to="https://play.google.com/store/apps/details?id=com.myfitnesspal.android">
+          <Image src="googleplaystore.png" />
+          </Link>
+        </Flex>
+      </Box>
     </div>
   );
 };

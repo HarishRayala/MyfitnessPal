@@ -63,5 +63,8 @@ a:active {
     width: 300px;
     margin: auto;
   }
+  .slide-container{
+    height: 300px;
+  }
 
   
