@@ -1,6 +1,7 @@
+import { Box } from '@chakra-ui/react';
 import React from 'react'
-import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
 import "./Home.css"
 
 const slideImages = [
@@ -19,17 +20,18 @@ const slideImages = [
   ];
 const HomeSlideshow = () => {
   return (
-    <div className="slide-container">
-        <Slide>
-         {slideImages.map((slideImage, index)=> (
-            <div className="each-slide" key={index}>
-              <div >
-                <img src={slideImage.url} alt="image"  />
-                
+    <div >
+      <div >
+        <Slide >
+        {slideImages.map((slideImage, index)=> (
+            <div key={index}>
+              <div style={{margin:"0px 0px 0px 150px"}} >
+                <img src={slideImage.url} alt="image" srcset=""  />
               </div>
             </div>
-          ))} 
+          ))}
         </Slide>
+        </div>
     </div>
   )
 }

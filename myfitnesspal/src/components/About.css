@@ -1,0 +1,27 @@
+.box1 {
+    margin: 80px 50px 0px 100px;
+    
+}
+
+.box2 {
+    margin: auto;
+    width: 1600px;
+}
+
+.box3 {
+    font-weight: bold;
+}
+.box6 {
+    font-weight: bold;
+}
+.box8 {
+    font-weight: bold;
+}
+.sidebox1{
+    width: 600px;
+    margin-left: 10px;
+    text-align: left;
+    text-align: center;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

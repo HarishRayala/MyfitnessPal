@@ -182,14 +182,15 @@ const Home = () => {
           inspire their own journey.
         </Text>
       </Box>
+      <br />
       <Box>
-        
             <HomeSlideshow/>
-       
-
-        
       </Box>
-
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <Box textAlign="center" width="800px" margin="auto">
         <Box
           fontSize="50px"
@@ -281,12 +282,12 @@ const Home = () => {
       <br />
       <Box>
         <Flex justifyContent="center" gap="20px">
-          <Link to="https://apps.apple.com/us/app/myfitnesspal/id341232718" >
+          <a href="https://apps.apple.com/us/app/myfitnesspal/id341232718" >
           <Image src="ios.png"/>
-          </Link>
-          <Link to="https://play.google.com/store/apps/details?id=com.myfitnesspal.android">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.myfitnesspal.android">
           <Image src="googleplaystore.png" />
-          </Link>
+          </a>
         </Flex>
       </Box>
     </div>
