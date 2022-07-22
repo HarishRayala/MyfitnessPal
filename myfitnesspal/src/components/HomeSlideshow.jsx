@@ -26,7 +26,7 @@ const HomeSlideshow = () => {
         {slideImages.map((slideImage, index)=> (
             <div key={index}>
               <div style={{margin:"0px 0px 0px 150px"}} >
-                <img src={slideImage.url} alt="image" srcset=""  />
+                <img src={slideImage.url} alt="image"  />
               </div>
             </div>
           ))}

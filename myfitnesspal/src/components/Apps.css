@@ -1,0 +1,31 @@
+.box2 {
+    color: blue;
+}
+
+.box3buttons>button:hover {
+    color: white;
+    background-color: #1174b9;
+    width: 240px;
+    gap: 10px;
+    font-weight: 500;
+    height: 30px;
+    
+}
+
+.box3buttons {
+    width: 240px;
+    padding-left: 20px;
+}
+.featuredapps{
+   display: flex;
+    gap: 20px;
+    /* border: 1px solid red; */
+}
+.apps{
+    display: grid;
+    /* justify-content: center; */
+    grid-template-columns: repeat(3,1fr);
+    /* border: 1px solid black; */
+    width: 1000px;
+    gap: 20px;
+}
