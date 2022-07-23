@@ -138,5 +138,21 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "users": [
+    {
+      "email": "harishrayala2379@gmail.com",
+      "password": "$2a$10$8W6rADPVl2XYS5YWCqSV4ef9IghdT/fVVMTUfEJjfPfutFf73n0o6",
+      "name": "HARISH RAYALA",
+      "dob": "2022-07-16",
+      "id": 1
+    },
+    {
+      "email": "harishrayala279@gmail.com",
+      "password": "$2a$10$f19hbB8MFjzpdCX60ovYGOTVYzuBJVdHF3WqBscAytjEYq2d4SqUC",
+      "name": "HARISH RAYALA",
+      "dob": "2022-07-16",
+      "id": 2
+    }
+  ]
 }

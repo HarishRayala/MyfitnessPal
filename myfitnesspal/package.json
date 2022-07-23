@@ -14,8 +14,11 @@
     "@emotion/styled": "^11.9.3",
     "axios": "^0.27.2",
     "framer-motion": "^6.5.1",
+    "js-cookie": "^3.0.1",
+    "json-server-auth": "^2.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.33.1",
     "react-router-dom": "^6.3.0",
     "react-slideshow-image": "^4.0.3"
   },

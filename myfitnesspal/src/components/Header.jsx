@@ -1,8 +1,14 @@
-import { Box, Flex, Heading, Stack } from "@chakra-ui/react";
-import React from "react";
+import { Box, Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import Cookies from "js-cookie";
+import { useState } from "react";
+import { useEffect } from "react";
+import { Auth } from "../context";
 
 const Header = () => {
+  const {userdata,setuserData} = useContext(Auth)
+  //  console.log(userData)
   return (
     <div>
       <Box color="#0066ee">
@@ -12,11 +18,26 @@ const Header = () => {
               <Heading fontSize="30px">myfitnesspal</Heading>
             </Link>
           </Box>
-
+          
           <Stack mt="10px">
             <Box gap="10px">
-              <Link to="/login">log In</Link> {"|"}{" "}
-              <Link to="/signup">Sign Up</Link>
+            {userdata && <Text fontWeight="bold" >{userdata.user.name}</Text>}
+              {userdata ? (
+                <Button
+                  colorScheme="blue"
+                  onClick={() => {
+                    Cookies.remove("username");
+                    setuserData(null);
+                  }}
+                >
+                  log out
+                </Button>
+              ) : (
+                <>
+                  <Link to="/login">log In</Link> {"|"}{" "}
+                  <Link to="/signup">Sign Up</Link>
+                </>
+              )}
             </Box>
           </Stack>
         </Flex>
