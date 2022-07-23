@@ -23,7 +23,7 @@ const Navbar = () => {
             <Link to="/">FOOD</Link>
           </Box>
           <Box>
-            <Link to="/exercise">EXERCISE</Link>
+            <Link to="/">EXERCISE</Link>
           </Box>
           <Box>
             <Link to="/apps">APPS</Link>
@@ -35,7 +35,7 @@ const Navbar = () => {
             <Link to="/blog">BLOG</Link>
           </Box>
           <Box>
-            <Link to="/premium">PREMIUM</Link>
+            <Link to="/">PREMIUM</Link>
           </Box>
           <Box>
             <Link to="/goals">GOALS</Link>

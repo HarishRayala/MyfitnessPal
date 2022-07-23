@@ -24,12 +24,14 @@ a:active {
     background-image: url("../assets/HomeImages/hero-collage-top-large@2x.png");
     height: 800px;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .home_body_1 {
     background-image: url("../assets/HomeImages/hero-collage-search-bottom-large@2x.png");
     height: 300px;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .line {

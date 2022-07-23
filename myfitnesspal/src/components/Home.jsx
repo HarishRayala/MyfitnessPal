@@ -37,7 +37,7 @@ const Home = () => {
           </Text>
           <br />
           <Box>
-            <Link to="/signup">
+            <Link to="/welcome">
               {" "}
               <Button className="startforfree" colorScheme="messenger">
                 START FOR FREE
