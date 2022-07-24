@@ -8,7 +8,7 @@ import axios from "axios";
 const Signup = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const onSubmit = data =>{
-    axios.post("http://localhost:3004/users/register",data).then((res)=>{
+    axios.post("https://project-myfitnesspal.herokuapp.com/register",data).then((res)=>{
         console.log(res.data)
     }).catch((err)=>{
         console.log(err.message)

@@ -16,11 +16,9 @@ import { useEffect } from "react";
 import Navbar from "./Navbar";
 import HomeSlideshow from "./HomeSlideshow";
 
-
 const Home = () => {
   const [text, setText] = useState("");
   const [pic, setPic] = useState(0);
-
 
   return (
     <div>
@@ -184,7 +182,7 @@ const Home = () => {
       </Box>
       <br />
       <Box>
-            <HomeSlideshow/>
+        <HomeSlideshow />
       </Box>
       <br />
       <br />
@@ -256,7 +254,7 @@ const Home = () => {
       </Box>
       <br />
       <br />
-      <Box textAlign="center" >
+      <Box textAlign="center">
         <Box
           fontSize="50px"
           fontWeight=" 860"
@@ -282,11 +280,11 @@ const Home = () => {
       <br />
       <Box>
         <Flex justifyContent="center" gap="20px">
-          <a href="https://apps.apple.com/us/app/myfitnesspal/id341232718" >
-          <Image src="ios.png"/>
+          <a href="https://apps.apple.com/us/app/myfitnesspal/id341232718">
+            <Image src="ios.png" />
           </a>
           <a href="https://play.google.com/store/apps/details?id=com.myfitnesspal.android">
-          <Image src="googleplaystore.png" />
+            <Image src="googleplaystore.png" />
           </a>
         </Flex>
       </Box>

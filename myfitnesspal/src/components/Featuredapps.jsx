@@ -9,7 +9,7 @@ const Featuredapps = () => {
 
   const getfeatapps = () => {
     axios
-      .get(" http://localhost:3004/featuredapps")
+      .get(" https://project-myfitnesspal.herokuapp.com/featuredapps")
       .then((res) => {
         console.log(res.data);
         setFeatapps(res.data);

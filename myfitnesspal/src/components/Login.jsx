@@ -13,7 +13,7 @@ const Login = () => {
   const {userdata,setuserData} = useContext(Auth)
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const onSubmit = data=>{
-    axios.post("http://localhost:3004/login",data).then((res)=>{
+    axios.post("https://project-myfitnesspal.herokuapp.com/login",data).then((res)=>{
         console.log(res.data)
         Cookies.set("username", JSON.stringify(res.data), { expires: 5 })
         

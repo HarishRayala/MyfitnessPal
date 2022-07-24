@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <Box>
+      <Box className="navbar">
         <Flex
           fontWeight="600"
           color="white"

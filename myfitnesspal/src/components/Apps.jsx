@@ -21,7 +21,7 @@ const Apps = () => {
 
   const getData = () => {
     axios
-      .get(" http://localhost:3004/Allapps")
+      .get(" https://project-myfitnesspal.herokuapp.com/Allapps")
       .then((res) => {
         console.log(res.data);
         setData(res.data);

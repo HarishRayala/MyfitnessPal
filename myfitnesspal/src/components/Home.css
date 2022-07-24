@@ -65,6 +65,71 @@ a:active {
     width: 300px;
     margin: auto;
   }
+
+  @media only screen and (min-width:320px) and (max-width:600px){
+    .home_head_div{
+      border-top: 1px solid white;
+      width: 320px;
+      margin: 0px 20px 0px 0px;
+      padding: 0px 0px 0px 0px;
+    }
+    .navbar{
+      width: 320px;
+    }
+    .header{
+      width: 320px;
+    }
+    .home_main_head {
+      font-size: 20px;
+      font-weight: 900;
+      color: #222628;
+      margin: auto;
+      width: 320px;
+      padding: 0px 0px 0px 0px;
+      
+    }
+    .home_top_div {
+      background-image: url("../assets/HomeImages/hero-collage-top-large@2x.png");
+      height: 700px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 320px;
+    }
+    .home_body_1 {
+      background-image: url("../assets/HomeImages/hero-collage-search-bottom-large@2x.png");
+      height: 400px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 900px;
+    }
+    .home_input_search_box{
+      margin: auto;
+      text-align: center;
+      outline: none;
+      width: 500px;
+      background-color: white;
+      border-radius: 20px;
+      display: flex;
+      height: 100px;
+    }
+    .home_body_2{
+      text-align: center;
+      margin: auto;
+      justify-content: center;
+    }
+    .home_body_2_sec1{
+      width: 600px;
+      text-align: center;
+      margin: -120px 0px 20px 120px;
+    }
+    .home_body_2_sec2{
+      display: flex;
+      margin: 0px 0px 0px 180px;
+      text-align: center;
+      width: 520px;
+      height: 280px;
+    }
+  }
   
 
   
