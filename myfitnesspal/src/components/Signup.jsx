@@ -12,7 +12,7 @@ const Signup = () => {
         console.log(res.data)
     }).catch((err)=>{
         console.log(err.message)
-        alert("PLEASE Enter new Email")
+        alert("Your Account has been Registered")
     })
 }
   return (
